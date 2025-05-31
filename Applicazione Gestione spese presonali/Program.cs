@@ -117,7 +117,7 @@ internal class Program
                     Console.WriteLine("Errore: inserire un numero valido.");
                     spese[N].importo = -1;
                 }
-            } while (spese[N].importo == 0);
+            } while (spese[N].importo < 0);
 
             spese[N].data = DateTime.Now.Date;
             N++;
