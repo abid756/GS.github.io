@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Applicazione Gestione spese presonali": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
