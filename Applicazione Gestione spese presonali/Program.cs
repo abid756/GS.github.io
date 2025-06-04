@@ -1,4 +1,3 @@
-﻿
 using System;
 using System.IO;
 
@@ -54,9 +53,24 @@ internal class Program
                     modifiche = true;
                     break;
                 case "4":
-                    Console.Write("Inserisci la descrizione della spesa da eliminare: ");
-                    string desc = Console.ReadLine();
-                    eliminaSpesa(transazioni, ref N, desc);
+                    int index;
+                    visualizzaSpese(transazioni, N);
+
+
+
+                    try
+                    {
+
+
+                        Console.Write("Inserisci il numero dell'indidice: ");
+                        index = Convert.ToInt32(Console.ReadLine());
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("Errore: Inserisci un numero valido.");
+                        continue;
+                    }
+                    eliminaSpesa(transazioni, ref N, index);
                     modifiche = true;
                     break;
                 case "5":
@@ -126,9 +140,11 @@ internal class Program
 
     static void visualizzaSpese(Transazione[] spese, int N)
     {
+          
         for (int i = 0; i < N; i++)
         {
-            Console.WriteLine($"{i + 1}. {spese[i].descrizione} -  {spese[i].importo}Euro - {spese[i].data:dd/MM/yyyy}");
+           int index = i+1;
+            Console.WriteLine($"{index}. {spese[i].descrizione} -  {spese[i].importo}Euro - {spese[i].data:dd/MM/yyyy}");
         }
     }
 
@@ -143,11 +159,15 @@ internal class Program
             {
                 Console.Write("Nuova descrizione: ");
                 spese[i].descrizione = Console.ReadLine();
-
-                Console.Write("Nuovo importo (€): ");
-                spese[i].importo = Convert.ToDouble(Console.ReadLine());
-
-                spese[i].data = DateTime.Now;
+                try
+                {
+                    Console.Write("Nuovo importo (€): ");
+                    spese[i].importo = Convert.ToDouble(Console.ReadLine());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Errore:Importo non valido.");
+                }
                 Console.WriteLine("Spesa modificata con successo.");
                 return;
             }
@@ -156,11 +176,11 @@ internal class Program
         Console.WriteLine("Spesa non trovata.");
     }
 
-    static void eliminaSpesa(Transazione[] spese, ref int N, string desc)
+    static void eliminaSpesa(Transazione[] spese, ref int N,int ind)
     {
         for (int i = 0; i < N; i++)
         {
-            if (spese[i].descrizione.Equals(desc, StringComparison.OrdinalIgnoreCase))
+            if (i == (ind -1))
             {
                 for (int j = i; j < N - 1; j++)
                 {
@@ -263,7 +283,6 @@ internal class Program
 
 
 }
-
 
 
 
