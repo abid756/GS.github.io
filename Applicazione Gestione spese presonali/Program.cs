@@ -56,20 +56,30 @@ internal class Program
                     int index;
                     visualizzaSpese(transazioni, N);
 
-
-
-                    try
+                    bool validIndex = false;
+                    do
                     {
 
 
-                        Console.Write("Inserisci il numero dell'indidice: ");
-                        index = Convert.ToInt32(Console.ReadLine());
-                    }
-                    catch (Exception)
-                    {
-                        Console.WriteLine("Errore: Inserisci un numero valido.");
-                        continue;
-                    }
+                     validIndex= int.TryParse(Console.ReadLine(), out index);
+
+                        
+                        if (index <= 0 || index > N||validIndex== false)
+                        {
+                            Console.WriteLine("Indice non valido. Riprova.");
+                            validIndex = false;
+                        }
+                      
+                        else
+                        {
+                            validIndex = true;
+                        }
+
+
+
+                    } while (validIndex ==false);
+                    
+
                     eliminaSpesa(transazioni, ref N, index);
                     modifiche = true;
                     break;
