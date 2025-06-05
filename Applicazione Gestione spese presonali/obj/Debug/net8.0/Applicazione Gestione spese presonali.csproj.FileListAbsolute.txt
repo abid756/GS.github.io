@@ -1,0 +1,14 @@
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\obj\Debug\net8.0\Applicazione Gestione spese presonali.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\obj\Debug\net8.0\Applicazione Gestione spese presonali.AssemblyInfoInputs.cache
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\obj\Debug\net8.0\Applicazione Gestione spese presonali.AssemblyInfo.cs
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\obj\Debug\net8.0\Applicazione Gestione spese presonali.csproj.CoreCompileInputs.cache
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\bin\Debug\net8.0\Applicazione Gestione spese presonali.exe
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\bin\Debug\net8.0\Applicazione Gestione spese presonali.deps.json
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\bin\Debug\net8.0\Applicazione Gestione spese presonali.runtimeconfig.json
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\bin\Debug\net8.0\Applicazione Gestione spese presonali.dll
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\bin\Debug\net8.0\Applicazione Gestione spese presonali.pdb
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\obj\Debug\net8.0\Applicazione Gestione spese presonali.dll
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\obj\Debug\net8.0\refint\Applicazione Gestione spese presonali.dll
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\obj\Debug\net8.0\Applicazione Gestione spese presonali.pdb
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\obj\Debug\net8.0\Applicazione Gestione spese presonali.genruntimeconfig.cache
+C:\Users\Hossain.22049\Desktop\Applicazione Gestione spese presonali\obj\Debug\net8.0\ref\Applicazione Gestione spese presonali.dll
